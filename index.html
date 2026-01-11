@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Rent Rio | Aluguel de Lanchas e Jetskis</title>
+    <meta name="description" content="Aluguel premium de lanchas, iates e jetskis no Rio de Janeiro. Experiências náuticas exclusivas nas praias mais famosas do Brasil.">
+    <meta name="keywords" content="aluguel de lancha Rio, jetski Rio, iate Rio, passeio de barco Rio, locação náutica, Marina da Glória">
+    <meta name="author" content="Aqua Rent Rio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aquarentrio.com.br/">
+    <meta property="og:title" content="Aquarent Rio">
+    <meta property="og:description" content="Aluguel de lanchas e passeios exclusivos no Rio de Janeiro.">
+    <meta property="og:image" content="https://aquarentrio.com.br/img/aquarent.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://aquarentrio.com.br/img/aquarent.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aqua Rent Rio | Aluguel Premium de Lanchas e Jetskis">
+    <meta property="og:description" content="Viva o Rio de Janeiro pelo mar. Aluguel premium de embarcações com segurança e exclusividade.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://aquarentrio.com.br/img/aquarent.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0066FF;
+            --primary-dark: #0052D4;
+            --secondary: #00D4FF;
+            --accent: #FF6B00;
+            --light: #F8FAFF;
+            --dark: #0A1A2D;
+            --darker: #071426;
+            --success: #00C853;
+            --warning: #FF9800;
+            --danger: #FF3D00;
+            --gray: #64748B;
+            --light-gray: #E2E8F0;
+            --white: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Modern Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 102, 255, 0.1);
+            position: center;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border: 0px solid #ffffff;
+            border-radius: 30px;
+            
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            position: center;
+        }
+      
+      
+      
+      /* Modern Logo Design */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            width: 150px;
+        }
+        
+        .logo-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            color: white;
+            font-size: 24px;
+            transform: rotate(-5deg);
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+            overflow: hidden;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            padding: 5px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 28px;
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-text span {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--gray);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s;
+            position: relative;
+            padding: 8px 0;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 2px;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* Buttons */
+        .btn {
+            padding: 14px 28px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(-1px);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        /* Hero Section - Modern Design */
+.hero {
+    position: relative;
+    padding: 180px 0 100px;
+    margin-top: 150px;
+    
+    /* SUA IMAGEM LOCAL + GRADIENTE PARA CONTRASTE */
+    background: 
+       linear-gradient(rgba(10, 26, 45, 0.6), rgba(10, 26, 45, 0.7)),
+       url('./img/banner.jpg') center /cover no-repeat;
+       
+    
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    
+    /* Efeito parallax sutil para desktop */
+    background-attachment: fixed;
+    
+    /* Melhor performance em mobile */
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+        padding: 150px 0 80px;
+        background-position: center center;
+    }
+    
+    /* Para telas muito pequenas */
+    @media (max-width: 480px) {
+        padding: 120px 0 60px;
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 107, 0, 0.05) 0%, transparent 50%);
+    z-index: 1;
+    
+    /* Efeito de brilho sutil */
+    animation: pulseGlow 10s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    /* Animação de entrada */
+    animation: contentFadeIn 1s ease-out;
+}
+
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2 {
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    
+    /* Responsividade para o título - AJUSTE IMPORTANTE */
+    @media (max-width: 1024px) {
+        font-size: 48px;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 36px;
+        margin-bottom: 20px;
+        /* Removendo quebra forçada para mobile */
+        br {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+        /* Garantir que o texto não quebre de forma estranha */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    @media (max-width: 360px) {
+        font-size: 24px;
+    }
+}
+
+/* ADICIONE ESTE CSS PARA AJUSTAR O TEXTO EM MOBILE */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero h2 br {
+        display: none; /* Remove a quebra forçada em mobile */
+    }
+}
+.hero h2 span {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+   
+    background-clip: text;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Efeito de brilho no texto gradiente */
+     animation: textShine 3s infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1.2);
+    }
+}
+
+.hero p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    
+    /* Responsividade para o parágrafo */
+    @media (max-width: 768px) {
+        font-size: 18px;
+        margin: 0 auto 30px;
+        padding: 0 15px;
+    }
+    
+    @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0 auto 25px;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    
+    /* Responsividade para os botões */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    @media (max-width: 480px) {
+        margin-top: 25px;
+    }
+}
+
+/* Efeito de overlay adicional para melhor contraste */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(0, 0, 0, 0.2) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+        
+        /* Search Section - Glass Morphism */
+        .search-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: -60px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .search-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .search-title i {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 28px;
+        }
+        
+        .search-title h3 {
+            font-size: 28px;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        
+        .location-info {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 212, 255, 0.05));
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .location-info i {
+            color: var(--primary);
+            font-size: 24px;
+            margin-right: 16px;
+        }
+        
+        /* Fleet Section - Modern Cards */
+        .section-title {
+            text-align: center;
+            margin: 100px 0 60px;
+        }
+        
+        .section-title h3 {
+            font-size: 42px;
+            color: var(--dark);
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--gray);
+            font-size: 18px;
+        }
+        
+        .fleet-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 100px;
+         }
+        }
+        
+        .vehicle-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--light-gray);
+        }
+        
+        .vehicle-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .vehicle-image {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .vehicle-card:hover .vehicle-image img {
+            transform: scale(1.1);
+        }
+        
+        .vehicle-type {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+        
+        .vehicle-info {
+            padding: 30px;
+        }
+        
+        .vehicle-info h4 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        
+        .vehicle-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .price {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        /* Galeria de fotos das embarcações */
+        .vehicle-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .gallery-thumbnail {
+            width: 100%;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .gallery-thumbnail:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+        }
+        
+        .gallery-thumbnail.active {
+            border-color: var(--primary);
+        }
+        
+        /* Modal para galeria */
+        .gallery-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 3000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gallery-modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .gallery-modal-img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+        
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+        
+        .gallery-nav.prev {
+            left: 20px;
+        }
+        
+        .gallery-nav.next {
+            right: 20px;
+        }
+        
+        .gallery-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+        }
+        
+        .gallery-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            border-radius: 20px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        
+        /* How It Works - Modern Steps */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 100px;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 50px 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .step:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .step-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 212, 255, 0.1));
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--darker);
+            color: white;
+            padding: 100px 0 60px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        /* Cookie Consent */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 26, 45, 0.98);
+            backdrop-filter: blur(20px);
+            color: white;
+            padding: 30px 0;
+            z-index: 9999;
+            display: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 600px;
+            padding: 50px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+            animation: modalAppear 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes modalAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h2 {
+                font-size: 48px;
+            }
+            
+            .fleet-container {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+            
+            .vehicle-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .search-container {
+                padding: 30px;
+            }
+            
+            .section-title h3 {
+                font-size: 32px;
+            }
+            
+            .fleet-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .vehicle-gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text h1 {
+                font-size: 24px;
+            }
+            
+            .hero h2 {
+                font-size: 28px;
+            }
+            
+            .modal-content {
+                padding: 30px;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .vehicle-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Floating Elements */
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--secondary));
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--primary-dark), var(--primary));
+        }
+    </style>
+</head>
+<body>
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="flex: 1; min-width: 300px;">
+                <p style="color: white; margin: 0;">🍪 Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#privacy-policy" style="color: var(--secondary);">Política de Privacidade</a>.</p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <button class="btn btn-outline" id="cookieSettings" style="color: white; border-color: white;">Configurar</button>
+                <button class="btn btn-primary" id="cookieAccept">Aceitar Todos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div>
+                    <img src="./img/logo.png" alt="rio">
+                </div> 
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#fleet"><i class="fas fa-ship"></i> Frota</a></li>
+                    <li><a href="#locations"><i class="fas fa-map-marker-alt"></i> Locais</a></li>
+                    <li><a href="#how-it-works"><i class="fas fa-play-circle"></i> Como Funciona</a></li>
+                    <li><a href="#contact"><i class="fas fa-phone-alt"></i> Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="https://wa.me/5521966930417" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h2 class="fade-in">Viva o Rio de Janeiro <span></span><br><span>pelo mar</span></h2>
+                <p class="fade-in">Aluguel premium de lanchas, iates e jetskis nas águas da Cidade Maravilhosa. Experiências exclusivas com segurança e sofisticação.</p>
+                <p>
+                    Bilinguis Consultants (English or Spanish)
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#fleet" class="btn btn-primary">
+                        <i class="fas fa-ship"></i> Explorar Frota
+                    </a>
+                    <a href="https://wa.me/5521966930417" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Reservar Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <div class="container">
+            <div class="search-container fade-in">
+                <div class="search-title">
+                    <i class="fas fa-search-location floating-element"></i>
+                    <h3>Encontre sua aventura no Rio</h3>
+                </div>
+                
+                <div class="location-info">
+                    <i class="fas fa-map-pin"></i>
+                    <p><strong>Exclusivo Rio de Janeiro:</strong> Marina da Glória, Niterói</p>
+                </div>
+                
+                <form class="search-form" id="bookingForm">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                        <div class="form-group">
+                            <label for="location"><i class="fas fa-map-marker-alt"></i> Local de Embarque</label>
+                            <select id="location" required style="width: 100%; padding: 16px; border-radius: 12px; border: 2px solid var(--light-gray); font-family: 'Inter', sans-serif; font-size: 16px;">
+                                <option value="">Selecione o local</option>
+                                <option value="marina-gloria">Marina da Glória</option>
+                                <option value="barra-tijuca">Niterói</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date"><i class="fas fa-calendar-alt"></i> Data do Passeio</label>
+                            <input type="date" id="date" required style="width: 100%; padding: 16px; border-radius: 12px; border: 2px solid var(--light-gray); font-family: 'Inter', sans-serif; font-size: 16px;">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration"><i class="fas fa-clock"></i> Quantidade de pessoas</label>
+                            <select id="duration" required style="width: 100%; padding: 16px; border-radius: 12px; border: 2px solid var(--light-gray); font-family: 'Inter', sans-serif; font-size: 16px;">
+                                <option value="">Quantidade de pessoas</option>
+                                <option value="1-3">1 - 3</option>
+                                <option value="4-6">4 - 6</option>
+                                <option value="7-10">7 - 10</option>
+                                <option value="11-15">11 - 15</option>
+                                <option value="16-20">16 - 20</option>
+                                <option value="20+">acima de 20</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicleType"><i class="fas fa-ship"></i> Tipo de Embarcação</label>
+                            <select id="vehicleType" required style="width: 100%; padding: 16px; border-radius: 12px; border: 2px solid var(--light-gray); font-family: 'Inter', sans-serif; font-size: 16px;">
+                                <option value="">Selecione o tipo</option>
+                                <option value="jetski">Jet Ski</option>
+                                <option value="lancha">Lancha</option>
+                                <option value="iate">Iate</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-primary" id="searchBoats" style="padding: 18px 60px; font-size: 17px;">
+                            <i class="fas fa-search"></i> Buscar Disponibilidade
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Fleet Section -->
+<section id="fleet">
+    <div class="container">
+        <div class="section-title">
+            <h3>Nossa Frota Premium</h3>
+            <p>Selecione entre as melhores embarcações para viver uma experiência náutica inesquecível</p>
+        </div>
+        
+        <div class="fleet-container">
+            <!-- Lancha Biane -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="./img/Biane.jpeg" alt="Lancha Biane" class="main-gallery-img" data-vehicle="Biane">
+                    <div class="vehicle-type">Lancha</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Biane</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 10 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Luxo absoluto para ocasiões especiais. Tripulação inclusa e experiência premium.</p>
+                    
+                    <!-- GALERIA DE FOTOS -->
+                    <div class="vehicle-gallery" data-vehicle="Biane">
+                        <img src="./img/Biane.jpeg" alt="Foto 1 - Biane" class="gallery-thumbnail active" onclick="openGallery('Biane', 0)">
+                        <img src="./img/Biane2.jpg" alt="Foto 2 - Biane" class="gallery-thumbnail" onclick="openGallery('Biane', 1)">
+                        <img src="./img/Biane3.jpg" alt="Foto 3 - Biane" class="gallery-thumbnail" onclick="openGallery('Biane', 2)">
+                        <img src="./img/Biane4.jpg" alt="Foto 4 - Biane" class="gallery-thumbnail" onclick="openGallery('Biane', 3)">
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 2.500 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/5h</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;"></div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Biane">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catamarã BLAU -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="./img/blau.jpeg" alt="Catamarã BLAU" class="main-gallery-img" data-vehicle="Catamarã BLAU">
+                    <div class="vehicle-type">Catamarã</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Catamarã BLAU</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 20 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Para quem busca conforto e uma navegação suave, o catamarã é perfeito para fazer sua festa ou resenha com amigos e familiares.</p>
+                    
+                    <!-- GALERIA DE FOTOS -->
+                    <div class="vehicle-gallery" data-vehicle="Catamarã BLAU">
+                        <img src="./img/blau.jpeg" alt="Foto 1 - Catamarã BLAU" class="gallery-thumbnail active" onclick="openGallery('Catamarã BLAU', 0)">
+                        <img src="./img/blau2.jpeg" alt="Foto 2 - Catamarã BLAU" class="gallery-thumbnail" onclick="openGallery('Catamarã BLAU', 1)">
+                        <img src="./img/blau3.jpeg" alt="Foto 3 - Catamarã BLAU" class="gallery-thumbnail" onclick="openGallery('Catamarã BLAU', 2)">
+                        <img src="./img/blau4.jpeg" alt="Foto 4 - Catamarã BLAU" class="gallery-thumbnail" onclick="openGallery('Catamarã BLAU', 3)">
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 6.000 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/5h</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;"></div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Catamarã BLAU">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mangata -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="https://naveguetemporada.com/wp-content/uploads/2025/08/Lancha-Sessa-44-Mangata-1.jpg" alt="Iate Mangata" class="main-gallery-img" data-vehicle="Mangata">
+                    <div class="vehicle-type">Iate</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Mangata</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 12 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Perfeita para passeios em família ou com amigos. Conforto e estilo incomparáveis.</p>
+                    
+                    <!-- GALERIA DE FOTOS -->
+                    <div class="vehicle-gallery" data-vehicle="Mangata">
+                        <img src="https://naveguetemporada.com/wp-content/uploads/2025/08/Lancha-Sessa-44-Mangata-1.jpg" alt="Foto 1 - Mangata" class="gallery-thumbnail active" onclick="openGallery('Mangata', 0)">
+                        <img src="./img/Mangata2.webp" alt="Foto 2 - Mangata" class="gallery-thumbnail" onclick="openGallery('Mangata', 1)">
+                        <img src="./img/Mangata3.webp" alt="Foto 3 - Mangata" class="gallery-thumbnail" onclick="openGallery('Mangata', 2)">
+                        <img src="./img/Mangata4.webp" alt="Foto 4 - Mangata" class="gallery-thumbnail" onclick="openGallery('Mangata', 3)">
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 10.000 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/5h</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;"></div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Mangata">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Grand Raray -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="./img/grand-raray-10.webp" alt="Iate Grand Raray" class="main-gallery-img" data-vehicle="Grand Raray">
+                    <div class="vehicle-type">Iate</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Grand Raray</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 18 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Luxo absoluto para ocasiões especiais. Tripulação inclusa e experiência premium.</p>
+                    
+                    <!-- GALERIA DE FOTOS -->
+                    <div class="vehicle-gallery" data-vehicle="Grand Raray">
+                        <img src="./img/grand-raray-10.webp" alt="Foto 1 - Grand Raray" class="gallery-thumbnail active" onclick="openGallery('Grand Raray', 0)">
+                        <img src="./img/GrandRaray2.webp" alt="Foto 2 - Grand Raray" class="gallery-thumbnail" onclick="openGallery('Grand Raray', 1)">
+                        <img src="./img/GrandRaray3.webp" alt="Foto 3 - Grand Raray" class="gallery-thumbnail" onclick="openGallery('Grand Raray', 2)">
+                        <img src="./img/GrandRaray4.webp" alt="Foto 4 - Grand Raray" class="gallery-thumbnail" onclick="openGallery('Grand Raray', 3)">
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 6.500 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/5h</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;"></div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Grand Raray">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seadoo 170 -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="./img/2023-sea-doo-gti-se-170-5.jpg" alt="Jet Ski Seadoo 170" class="main-gallery-img" data-vehicle="Seadoo 170">
+                    <div class="vehicle-type">Jet Ski</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Seadoo 170</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 3 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Experiência radical com vista para o Pão de Açúcar. Modelo 2024 com segurança máxima.</p>
+                    
+                    <div style="background: linear-gradient(135deg, rgba(255, 107, 0, 0.1), rgba(255, 152, 0, 0.05)); padding: 15px; border-radius: 12px; margin: 20px 0; border-left: 4px solid var(--warning);">
+                        <p style="font-size: 14px; color: var(--dark); margin: 0;">
+                            <strong><i class="fas fa-exclamation-circle"></i> Como funciona:</strong> Passeio já inclui combustível e instrutor habilitado!
+                        </p>
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 700 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/hora</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;">Diária: R$ 3.000 (5h)</div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Seadoo 170">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comendador -->
+            <div class="vehicle-card fade-in">
+                <div class="vehicle-image">
+                    <img src="./img/Comendador7.jpeg" alt="Lancha Comendador" class="main-gallery-img" data-vehicle="Comendador">
+                    <div class="vehicle-type">Lancha</div>
+                </div>
+                <div class="vehicle-info">
+                    <h4>Comendador</h4>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <span style="color: var(--primary); font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Marina da Glória
+                        </span>
+                        <span style="color: var(--gray);">
+                            <i class="fas fa-user"></i> 18 pessoas
+                        </span>
+                    </div>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Perfeita para passeios em família ou com amigos. Conforto e estilo incomparáveis.</p>
+                    
+                    <!-- GALERIA DE FOTOS -->
+                    <div class="vehicle-gallery" data-vehicle="Comendador">
+                        <img src="./img/Comendador7.jpeg" alt="Foto 1 - Comendador" class="gallery-thumbnail active" onclick="openGallery('Comendador', 0)">
+                        <img src="./img/Comendador2.jpeg" alt="Foto 2 - Comendador" class="gallery-thumbnail" onclick="openGallery('Comendador', 1)">
+                        <img src="./img/Comendador3.jpeg" alt="Foto 3 - Comendador" class="gallery-thumbnail" onclick="openGallery('Comendador', 2)">
+                        <img src="./img/Comendador4.jpeg" alt="Foto 4 - Comendador" class="gallery-thumbnail" onclick="openGallery('Comendador', 3)">
+                    </div>
+                    
+                    <div class="vehicle-price">
+                        <div class="price">
+                            R$ 6.000 <span style="font-size: 14px; font-weight: normal; color: var(--gray);">/5h</span>
+                            <div style="font-size: 16px; color: var(--gray); margin-top: 5px;"></div>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-vehicle="Comendador">
+                            Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Como Funciona</h3>
+                    <p>Simples, rápido e seguro em apenas 3 passos</p>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step fade-in">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>1. Escolha sua Aventura</h4>
+                        <p style="color: var(--gray); margin-top: 10px;">Selecione entre jetskis, lanchas ou iates. Filtre por localização, data e preferências.</p>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>2. Faça sua Reserva</h4>
+                        <p style="color: var(--gray); margin-top: 10px;">Escolha data, horário e confirme todos os detalhes da sua experiência náutica.</p>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>3. Finalize pelo WhatsApp</h4>
+                        <p style="color: var(--gray); margin-top: 10px;">Envie os detalhes direto para nosso consultor, que entrará em contato para personalizar sua experiência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 100px 0; border-radius: 40px; margin: 100px 0;">
+            <div class="container" style="text-align: center;">
+                <h3 style="color: white; font-size: 42px; margin-bottom: 20px;">Pronto para Navegar?</h3>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 20px; max-width: 700px; margin: 0 auto 40px;">
+                    Converse com nossos especialistas e planeje a experiência náutica perfeita no Rio de Janeiro. Temos consultores bilíngues em espanhol e inglês!
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/5521966930417" 
+                       class="btn btn-whatsapp" 
+                       target="_blank"
+                       style="padding: 18px 50px; font-size: 18px; font-weight: 700;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+            <!-- Logo e Redes Sociais -->
+            <div style="flex: 1; min-width: 250px;">
+                <a href="#" class="logo">
+                    <div>
+                        <img src="./img/logo.png" alt="rio">
+                    </div>
+                </a>
+                <p style="color: rgba(255, 255, 255, 0.7); max-width: 300px; margin-bottom: 30px;">
+                    Há mais de uma década proporcionando as melhores experiências náuticas no Rio de Janeiro.
+                </p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; color: white; text-decoration: none;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; color: white; text-decoration: none;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; color: white; text-decoration: none;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Links Rápidos -->
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: white; margin-bottom: 25px; font-size: 18px;">Links Rápidos</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><a href="#home" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Início</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#fleet" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Frota</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#locations" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Locais</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#how-it-works" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Como Funciona</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: white; margin-bottom: 25px; font-size: 18px;">Legal</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;"><a href="#privacy" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Política de Privacidade</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#terms" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Termos de Uso</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#cookies" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">Política de Cookies</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#faq" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s;">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contato -->
+            <div style="flex: 1; min-width: 200px;">
+                <h4 style="color: white; margin-bottom: 25px; font-size: 18px;">Contato</h4>
+                <div style="color: rgba(255, 255, 255, 0.7);">
+                    <p style="margin-bottom: 15px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+                        Av. Infante Dom Henrique<br>Glória, Rio de Janeiro
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                        (21) 96693-0417
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                        aquarentrio@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; padding-top: 60px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <p style="color: rgba(255, 255, 255, 0.5);">
+                &copy; 2020 Aqua Rent Rio. CNPJ: 12.345.678/0001-99. Todos os direitos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+                <h3 style="color: var(--dark); font-size: 32px;">Resumo da Reserva</h3>
+                <button id="closeModal" style="background: none; border: none; font-size: 28px; color: var(--gray); cursor: pointer;">&times;</button>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 212, 255, 0.05)); padding: 30px; border-radius: 16px; margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Embarcação:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryVehicle">Seadoo 170</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Local:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryLocation">Marina da Glória</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Data:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryDate">15/10/2024</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Quantidade de pessoas:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryPassengers">1 - 3 pessoas</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Tipo de embarcação:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryVehicleType">Jet Ski</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                    <span style="color: var(--gray);">Duração:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryDuration">5 horas</span>
+                </div>
+                
+                <div id="caucaoInfo" style="background: rgba(255, 107, 0, 0.1); padding: 15px; border-radius: 12px; margin-top: 20px; border-left: 4px solid var(--warning); display: none;">
+                    <p style="margin: 0; color: var(--dark); font-size: 14px;">
+                        <strong><i class="fas fa-exclamation-circle"></i> Caução para Jet Ski:</strong> R$ 4.000 via cartão de crédito
+                    </p>
+                </div>
+            </div>
+            
+            <div style="border-top: 2px solid var(--light-gray); padding-top: 30px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                    <span style="color: var(--gray);">Valor do Aluguel:</span>
+                    <span style="font-weight: 600; color: var(--dark);" id="summaryRentalValue">R$ 3.000</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                    <span style="color: var(--gray);">Taxa de Serviço:</span>
+                    <span style="font-weight: 600; color: var(--dark);">R$ 0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 24px; font-weight: 800; color: var(--primary);">
+                  <span>Total:</span>
+                    <span id="summaryTotal">R$ 3.000</span>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 20px; margin-top: 40px;">
+                <button id="cancelBooking" class="btn btn-outline" style="flex: 1;">Voltar</button>
+                <button id="sendWhatsApp" class="btn btn-primary" style="flex: 1;">
+                    <i class="fab fa-whatsapp"></i> Enviar para WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Galeria de Fotos -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+            <button class="gallery-close" onclick="closeGallery()">&times;</button>
+            <button class="gallery-nav prev" onclick="changeGalleryImage(-1)">❮</button>
+            <img id="galleryFullImage" class="gallery-modal-img" src="" alt="">
+            <button class="gallery-nav next" onclick="changeGalleryImage(1)">❯</button>
+            <div class="gallery-counter">
+                <span id="currentImageIndex">1</span> de <span id="totalImages">4</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Consent
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const cookieAccept = document.getElementById('cookieAccept');
+            const cookieSettings = document.getElementById('cookieSettings');
+            
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    cookieConsent.style.display = 'block';
+                }, 1000);
+            }
+            
+            cookieAccept.addEventListener('click', function() {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieConsent.style.display = 'none';
+            });
+            
+            cookieSettings.addEventListener('click', function() {
+                alert('Para gerenciar suas preferências de cookies, acesse as configurações do seu navegador.');
+            });
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Booking System
+        const bookButtons = document.querySelectorAll('.book-btn');
+        const bookingModal = document.getElementById('bookingModal');
+        const closeModal = document.getElementById('closeModal');
+        const cancelBooking = document.getElementById('cancelBooking');
+        const sendWhatsApp = document.getElementById('sendWhatsApp');
+        const searchBoatsBtn = document.getElementById('searchBoats');
+        
+        // Set min date to tomorrow
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const dateInput = document.getElementById('date');
+        dateInput.min = tomorrow.toISOString().split('T')[0];
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+        
+        // Book button click
+        bookButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const vehicleName = this.getAttribute('data-vehicle');
+                
+                // Auto-select vehicle type in form based on vehicle name
+                if (vehicleName.includes('Seadoo')) {
+                    document.getElementById('vehicleType').value = 'jetski';
+                } else if (vehicleName.includes('Biane') || vehicleName.includes('Comendador') || vehicleName.includes('Catamarã')) {
+                    document.getElementById('vehicleType').value = 'lancha';
+                } else if (vehicleName.includes('Mangata') || vehicleName.includes('Grand Raray')) {
+                    document.getElementById('vehicleType').value = 'iate';
+                }
+                
+                // Show booking form
+                document.querySelector('.search-container').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
+        });
+        
+        // Search boats button
+        searchBoatsBtn.addEventListener('click', function() {
+            const location = document.getElementById('location').value;
+            const date = document.getElementById('date').value;
+            const duration = document.getElementById('duration').value;
+            const vehicleType = document.getElementById('vehicleType').value;
+            
+            if (!location || !date || !duration || !vehicleType) {
+                alert('Por favor, preencha todos os campos do formulário.');
+                return;
+            }
+            
+            // Format date
+            const dateObj = new Date(date);
+            const formattedDate = dateObj.toLocaleDateString('pt-BR');
+            
+            // Get location name
+            const locationSelect = document.getElementById('location');
+            const locationName = locationSelect.options[locationSelect.selectedIndex].text;
+            
+            // Get quantity of people
+            const durationSelect = document.getElementById('duration');
+            const passengersText = durationSelect.options[durationSelect.selectedIndex].text;
+            
+            // Get vehicle type name
+            const vehicleTypeSelect = document.getElementById('vehicleType');
+            const vehicleTypeText = vehicleTypeSelect.options[vehicleTypeSelect.selectedIndex].text;
+            
+            // Calculate prices based on selected vehicle type
+            let rentalValue = 0;
+            let isJetski = false;
+            let vehicleName = '';
+            
+            // Definição dos preços corretos de cada embarcação
+            if (vehicleType === 'jetski') {
+                isJetski = true;
+                vehicleName = 'Seadoo 170';
+                // Preço por hora para jet ski
+                rentalValue = 700;
+                // Para duração de 5 horas (padrão)
+                rentalValue = rentalValue * 5; // R$ 500 x 5 horas = R$ 3.000
+            } else if (vehicleType === 'lancha') {
+                // Verificar qual lancha baseado na seleção do usuário
+                const lanchaSelecionada = document.querySelector('.book-btn[data-vehicle*="Biane"], .book-btn[data-vehicle*="Comendador"], .book-btn[data-vehicle*="Catamarã"]')?.getAttribute('data-vehicle') || 'Biane';
+                
+                if (lanchaSelecionada === 'Biane') {
+                    vehicleName = 'Biane';
+                    rentalValue = 3000; // Preço fixo para 5h
+                } else if (lanchaSelecionada === 'Comendador') {
+                    vehicleName = 'Comendador';
+                    rentalValue = 6000; // Preço fixo para 5h
+                } else if (lanchaSelecionada.includes('Catamarã')) {
+                    vehicleName = 'Catamarã BLAU';
+                    rentalValue = 6000; // Preço fixo para 5h
+                }
+            } else if (vehicleType === 'iate') {
+                // Verificar qual iate baseado na seleção do usuário
+                const iateSelecionado = document.querySelector('.book-btn[data-vehicle*="Mangata"], .book-btn[data-vehicle*="Grand Raray"]')?.getAttribute('data-vehicle') || 'Mangata';
+                
+                if (iateSelecionado === 'Mangata') {
+                    vehicleName = 'Mangata';
+                    rentalValue = 10000; // Preço fixo para 5h
+                } else if (iateSelecionado === 'Grand Raray') {
+                    vehicleName = 'Grand Raray';
+                    rentalValue = 6500; // Preço fixo para 5h
+                }
+            }
+            
+            // Update modal with correct information
+            document.getElementById('summaryVehicle').textContent = vehicleName;
+            document.getElementById('summaryLocation').textContent = locationName;
+            document.getElementById('summaryDate').textContent = formattedDate;
+            document.getElementById('summaryPassengers').textContent = passengersText;
+            document.getElementById('summaryVehicleType').textContent = vehicleTypeText;
+            document.getElementById('summaryDuration').textContent = '5 horas'; // Duração padrão
+            document.getElementById('summaryRentalValue').textContent = 'R$ ' + rentalValue.toLocaleString('pt-BR');
+            
+            // Calcular total com taxa de serviço
+            const taxaServico = 0;
+            const total = rentalValue + taxaServico;
+            document.getElementById('summaryTotal').textContent = 'R$ ' + total.toLocaleString('pt-BR');
+            
+            // Show/hide caução info
+            const caucaoInfo = document.getElementById('caucaoInfo');
+            caucaoInfo.style.display = isJetski ? 'block' : 'none';
+            
+            // Setup WhatsApp button
+            setupWhatsAppButton(locationName, formattedDate, passengersText, vehicleTypeText, vehicleName, rentalValue, total, isJetski);
+            
+            // Show modal
+            bookingModal.style.display = 'flex';
+        });
+        
+        // Setup WhatsApp button function
+        function setupWhatsAppButton(location, date, passengers, vehicleType, vehicleName, rentalValue, total, isJetski) {
+            // Criando mensagem completa para o WhatsApp
+            const whatsappMessage = `*NOVA RESERVA - Aqua Rent Rio*
+
+🚤 *Embarcação:* ${vehicleName}
+📍 *Local de embarque:* ${location}
+📅 *Data do passeio:* ${date}
+👥 *Quantidade de pessoas:* ${passengers}
+🎯 *Tipo de embarcação:* ${vehicleType}
+💰 *Valor do aluguel:* R$ ${rentalValue.toLocaleString('pt-BR')}
+💳 *Valor total:* R$ ${total.toLocaleString('pt-BR')}
+${isJetski ? '⚠️ *Caução Jet Ski:* R$ 4.000 (cartão de crédito ou pix)\n' : ''}
+
+Um de nossos consultores ja vai te atender
+_One of our consultants will assist you shortly._.`;
+
+            // Codificando a mensagem para URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Número do WhatsApp da Aqua Rent Rio (substitua pelo número real)
+            const whatsappUrl = `https://wa.me/5521966930417?text=${encodedMessage}`;
+            
+            // Atualizando o botão WhatsApp
+            sendWhatsApp.onclick = function() {
+                window.open(whatsappUrl, '_blank');
+                bookingModal.style.display = 'none';
+                
+                // Feedback para o usuário
+                setTimeout(() => {
+                    alert('✅ WhatsApp aberto com os detalhes da sua reserva!\n\nUm consultor especializado entrará em contato em breve para finalizar sua experiência náutica.');
+                }, 500);
+            };
+        }
+        
+        // Close modal
+        closeModal.addEventListener('click', function() {
+            bookingModal.style.display = 'none';
+        });
+        
+        cancelBooking.addEventListener('click', function() {
+            bookingModal.style.display = 'none';
+        });
+        
+        // Close modal on outside click
+        window.addEventListener('click', function(event) {
+            if (event.target === bookingModal) {
+                bookingModal.style.display = 'none';
+            }
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with fade-in class
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+        
+        // Sistema de Galeria de Fotos
+        let currentGallery = {
+            vehicle: '',
+            images: [],
+            currentIndex: 0
+        };
+        
+        function openGallery(vehicleName, startIndex) {
+            // Coletar todas as imagens da galeria deste veículo
+            const thumbnails = document.querySelectorAll(`.vehicle-gallery[data-vehicle="${vehicleName}"] .gallery-thumbnail`);
+            const images = [];
+            
+            thumbnails.forEach(thumb => {
+                images.push(thumb.src);
+            });
+            
+            // Se não houver imagens, usar a imagem principal
+            if (images.length === 0) {
+                const mainImg = document.querySelector(`.main-gallery-img[data-vehicle="${vehicleName}"]`);
+                if (mainImg) {
+                    images.push(mainImg.src);
+                }
+            }
+            
+            currentGallery.vehicle = vehicleName;
+            currentGallery.images = images;
+            currentGallery.currentIndex = startIndex;
+            
+            // Mostrar a imagem selecionada
+            document.getElementById('galleryFullImage').src = images[startIndex];
+            document.getElementById('currentImageIndex').textContent = startIndex + 1;
+            document.getElementById('totalImages').textContent = images.length;
+            
+            // Mostrar o modal
+            document.getElementById('galleryModal').style.display = 'flex';
+        }
+        
+        function closeGallery() {
+            document.getElementById('galleryModal').style.display = 'none';
+        }
+        
+        function changeGalleryImage(direction) {
+            const total = currentGallery.images.length;
+            currentGallery.currentIndex = (currentGallery.currentIndex + direction + total) % total;
+            
+            document.getElementById('galleryFullImage').src = currentGallery.images[currentGallery.currentIndex];
+            document.getElementById('currentImageIndex').textContent = currentGallery.currentIndex + 1;
+        }
+        
+        // Fechar galeria com ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGallery();
+            }
+            if (document.getElementById('galleryModal').style.display === 'flex') {
+                if (e.key === 'ArrowLeft') changeGalleryImage(-1);
+                if (e.key === 'ArrowRight') changeGalleryImage(1);
+            }
+        });
+        
+        // Fechar galaria clicando fora da imagem
+        document.getElementById('galleryModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeGallery();
+            }
+        });
+    </script>
+</body>
+</html>
